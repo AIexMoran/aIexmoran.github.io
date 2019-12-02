@@ -6,18 +6,45 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <span>AIexMoran</span>
-        </div>
-        <div id="about">
-            <a href="#" title="main">Title</a>
-            <a href="#" title="projects">Projects</a>
-            <a href="#" title="contact">Contact</a>
-        </div>
-    </header>
+<header>
+    <div id="logo" onclick="slowScroll('#top')">
+        <span>AIexMoran</span>
+    </div>
+    <div id="about">
+        <a href="#" title="top" onclick="slowScroll('#top')">Author</a>
+        <a href="#" title="projects" onclick="slowScroll('#projects')">Projects</a>
+        <a href="#" title="contact" onclick="slowScroll('#contact')">Contact</a>
+    </div>
+</header>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+<div id="top">
+    <div id="message">
+        <div class="intro">
+            <h2>AIexMoran</h2>
+        </div>
+        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </div>
+</div>
+<div id="projects">
+    <div class="intro">
+        <h2><a href="https://github.com/AIexMoran/floweditor">Floweditor</a></h2>
+    </div>
+    <div class="subtitle">
+        <h4>JavaFX, xml</h4>
+        <img class="demoGif" src="https://github.com/AIexMoran/floweditor/blob/master/demo.gif?raw=true">
+    </div>
+</div>
+<div id="contact">
+    <div class="intro">
+        <h2>Contact</h2>
+    </div>
+    <div class="text">
+        <h4>Telegram: <a href="https://telegram.me/aIexmoran">@aIexmoran</a></h4>
+        <h4>Github: <a href="https://github.com/AIexMoran">AIexMoran</a></h4>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

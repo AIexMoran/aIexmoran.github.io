@@ -9,11 +9,15 @@
 body, html {
     width: 100%;
     height: 100%;
+    background-image: url("http://www.gsfdcy.com/data/img1/79/2060837-smart-wallpaper.jpg");
 }
 
 body {
-    background-color: #000000;
+    background-color: #ffffff;
     font-family: "Arial Black";
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
@@ -22,17 +26,114 @@ header {
     background: transparent;
     float: left;
     position: fixed;
+    opacity: 90%;
 }
 
 header #logo {
     color: #ffffff;
     cursor: pointer;
+    float: left;
+}
+header #about {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 40px;
+    margin-bottom: 10px;
+    float: right;
+    width: 60%;
+}
+
+header #about a {
+    color: #ffffff;
+}
+
+header #about a:hover {
+    color: #b0b0b0;
+    text-decoration: underline;
+}
+
+header #about a:not(:last-child) {
+    margin-right: 7%;
 }
 
 header #logo span {
-    font-size: 1.7em;
+    font-size: 1.9em;
     line-height: 45px;
     margin-left: 40px;
     font-family: 'Bebas Neue', cursive;
 }
 
+.fixed {
+    z-index: 9999;
+    background-color: #ffffff;
+    border-bottom: 1px solid black;
+}
+
+header.fixed #logo {
+    color: #343434;
+}
+
+header.fixed #about a{
+    color: #343434;
+}
+header.fixed #about a:hover {
+    color: #7c7c7c;
+}
+
+#top {
+    width: 100%;
+    height: 600px;
+    background: transparent;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+}
+
+#message {
+    padding-top: 15%;
+}
+
+.demoGif {
+    margin: 4px;
+    border: 1px solid black;
+}
+
+#projects {
+    padding: 100px 20%;
+    width: 60%;
+    float: left;
+    background-color: #ffffff;
+    border-top: 2px solid black;
+    color: #343434;
+    font-size: 1.3em;
+}
+
+#projects h2 {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+#projects .intro a {
+    color: #343434;
+}
+#projects .intro a:hover {
+    color: #7c7c7c;
+}
+
+#contact {
+    color: #ffffff;
+    background-color: black;
+    padding: 100px 20%;
+    width: 60%;
+    float: left;
+    border-top: 2px solid black;
+    font-size: 1.3em;
+}
+
+#contact a {
+    color: #ffffff;
+}
+
+#contact a:hover {
+    color: #7c7c7c;
+}
